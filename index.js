@@ -8,52 +8,51 @@ import foodData from './data.json' assert { type: "json" };
   
   // Task 2: List all the food items with category vegetables
   function listVegetables(data) {
-    return data.filter(item => item.category === 'Vegetable').map(item => item.foodname);
+    return data.filter(item => item.category === 'Vegetable');
   }
   
   // Task 3: List all the food items with category fruit
   function listFruits(data) {
-    return data.filter(item => item.category === 'Fruit').map(item => item.foodname);
+    return data.filter(item => item.category === 'Fruit');
   }
   
   // Task 4: List all the food items with category protein
   function listProteins(data) {
-    return data.filter(item => item.category === 'Protein').map(item => item.foodname);
+    return data.filter(item => item.category === 'Protein');
   }
   
   // Task 5: List all the food items with category nuts
   function listNuts(data) {
-    return data.filter(item => item.category === 'Nuts').map(item => item.foodname);
+    return data.filter(item => item.category === 'Nuts');
   }
-  
   // Task 6: List all the food items with category grains
   function listGrains(data) {
-    return data.filter(item => item.category === 'Grain').map(item => item.foodname);
+    return data.filter(item => item.category === 'Grain');
   }
   
   // Task 7: List all the food items with category dairy
   function listDairy(data) {
-    return data.filter(item => item.category === 'Dairy').map(item => item.foodname);
+    return data.filter(item => item.category === 'Dairy');
   }
   
   // Task 8: List all the food items with calorie above 100
   function listAbove100Calories(data,threshold) {
-    return data.filter(item => item.calorie > threshold).map(item => item.foodname);
+    return data.filter(item => item.calorie > threshold);
   }
   
   // Task 9: List all the food items with calorie below 100
   function listBelow100Calories(data,threshold) {
-    return data.filter(item => item.calorie < threshold).map(item => item.foodname);
+    return data.filter(item => item.calorie < threshold);
   }
   
   // Task 10: List all the food items with highest protein content to lowest
   function listSortedByProtein(data) {
-    return data.slice().sort((a, b) => b.protiens - a.protiens).map(item => item.foodname);
+    return data.slice().sort((a, b) => b.protiens - a.protiens);
   }
   
   // Task 11: List all the food items with lowest carb content to highest
   function listSortedByCarb(data) {
-    return data.slice().sort((a, b) => a.cab - b.cab).map(item => item.foodname);
+    return data.slice().sort((a, b) => a.cab - b.cab);
   }
   
   // Output
